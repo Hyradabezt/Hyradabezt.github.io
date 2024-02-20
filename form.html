@@ -1,14 +1,19 @@
-<html lang="en">
-<head>
-<body>
-  <h1>Contact Us</h1>
-  <textarea type="text" cols="100" rows="2" placeholder="Your name" name="name" id="name" style="color: blue"></textarea><br><br>
-
-  <textarea type="email" cols="100" rows="2" placeholder="Your email" name="email" id="name" style="color: blue"></textarea><br><br>
-
-  <textarea id="name" cols="100" rows="6" placeholder="Message" style="color: blue"></textarea><br><br>
-
-  <input type="submit" value="Send Message" id="sub" style="width: 755">
-</body>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact Us Form</title>
+  </head>
+  <body>
+   <div style="max-width: 850px; margin-left:auto; margin-right: auto">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <form style="margin-left: -20px; padding: 40px" method="post" action="/contact-form-data/">
+              <p><input style="font-size:medium; padding:10px; border: none; background-color: rgb(196, 236, 222); width: 100%; margin-bottom: 15px; box-sizing: border-box;" name="readername" type="text" placeholder="Your name" required/></p>
+              <p><input  style="font-size:medium; padding:10px; border: none; background-color: rgb(196, 236, 222); width: 100%; margin-bottom: 15px; box-sizing: border-box;" name="readeremail" type="text" placeholder="Email" required/></p>
+              <p><textarea style="font-size:medium; padding:10px; border: none; background-color: rgb(196, 236, 222); width: 100%;  margin-bottom: 15px;box-sizing: border-box;" name="message" rows="5" cols="30" placeholder="Message" required></textarea>  </p>
+              <p><button style="font-size:large; padding:10px; border: none; width: 100%;  margin-bottom: 15px; box-sizing: border-box;"; type="submit">Send Message</button></p>     
+        </form>
+    </div>
+  </body>
 </html>
